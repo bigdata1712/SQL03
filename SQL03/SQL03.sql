@@ -82,6 +82,6 @@ order by e.last_name asc;
 */
 select e.employee_id, e.last_name, e.hire_date, m.last_name, m.hire_date
   from employees e, employees m
-  where e.manager_id = m.employee_id
-  and e.hire_date <  m.hire_date;
+ where e.manager_id = m.employee_id
+   and e.hire_date <  m.hire_date;
 
